@@ -1,4 +1,4 @@
-# skyNET
+# Lightweight Multi-Drone Detection and 3D-Localization using YOLO
 
 ---
 
