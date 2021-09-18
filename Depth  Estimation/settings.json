@@ -1,0 +1,237 @@
+{
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings.md",
+  "SettingsVersion": 1.2,
+  "SimMode": "Multirotor",
+  "ClockSpeed": 1.0,
+"Cameras": [
+        { "CameraName": "0", "ImageType": 0, "PixelsAsFloat": false, "Compress": true,
+          "X": 0.50, "Y": 0, "Z": -50,
+          "Pitch": -90, "Roll": 0, "Yaw": 0 }
+    		]
+  		,
+  "Recording": {
+    "RecordOnMove": false,
+    "RecordInterval": 0.05,
+    "Cameras": [
+        { "CameraName": "0", "ImageType": 0, "PixelsAsFloat": false, "Compress": true,
+          "X": 0.50, "Y": 0, "Z": -50,
+          "Pitch": -90, "Roll": 0, "Yaw": 0 }
+    		]
+  		},
+  "Vehicles": {
+    "Drone1": {
+      "VehicleType": "Simpleflight",
+      "X": 39, "Y": 0, "Z": 0, 
+      "Pitch": 0, "Roll": 0, "Yaw": 180,
+      "Sensors": {
+        "Barometer": {
+          "SensorType": 1,
+          "Enabled": true
+                      },
+        "Imu": {
+           "SensorType": 2,
+           "Enabled": true
+                },
+        "Gps": {
+           "SensorType": 3,
+           "Enabled": true
+                },
+        "Magnetometer": {
+           "SensorType": 4,
+           "Enabled": true
+                        },
+        "Distance": {
+           "SensorType": 5,
+           "Enabled": true
+                    },
+        "LidarCustom": {
+          "SensorType": 6,
+          "Enabled": true,
+          "NumberOfChannels": 16,
+          "PointsPerSecond": 100000,
+          "VerticalFOVUpper": 16,
+          "VerticalFOVLower": -16,
+          "X": 0,
+          "Y": 0,
+          "Z": -1,
+          "DrawDebugPoints": false,
+          "DataFrame": "SensorLocalFrame"
+                        }
+                  },
+      "Cameras": {
+        "front_left_custom": {
+          "CaptureSettings": [
+            {
+              "PublishToRos": 1,
+              "ImageType": 0,
+              "Width": 1920,
+              "Height": 1080,
+              "FOV_Degrees": 90,
+              "DepthOfFieldFstop": 2.8,
+              "DepthOfFieldFocalDistance": 200.0, 
+              "DepthOfFieldFocalRegion": 200.0,
+              "TargetGamma": 1.5
+            },
+	    {
+	      "PublishToRos": 1,
+              "ImageType": 2,
+              "Width": 1920,
+              "Height": 1080,
+              "FOV_Degrees": 90,
+              "DepthOfFieldFstop": 2.8,
+              "DepthOfFieldFocalDistance": 200.0, 
+              "DepthOfFieldFocalRegion": 200.0,
+              "TargetGamma": 1.5
+	   }
+          ],
+          "X": 0.50, "Y": -0.06, "Z": 0.30,
+          "Pitch": -5, "Roll": 0, "Yaw": 0
+        },
+
+"front_right_custom": {
+          "CaptureSettings": [
+            {
+              "PublishToRos": 1,
+              "ImageType": 0,
+              "Width": 1920,
+              "Height": 1080,
+              "FOV_Degrees": 90,
+              "DepthOfFieldFstop": 2.8,
+              "DepthOfFieldFocalDistance": 200.0, 
+              "DepthOfFieldFocalRegion": 200.0,
+              "TargetGamma": 1.5
+            },
+	    {
+	      "PublishToRos": 1,
+              "ImageType": 2,
+              "Width": 1920,
+              "Height": 1080,
+              "FOV_Degrees": 90,
+              "DepthOfFieldFstop": 2.8,
+              "DepthOfFieldFocalDistance": 200.0, 
+              "DepthOfFieldFocalRegion": 200.0,
+              "TargetGamma": 1.5
+	   }
+          ],
+          "X": 0.50, "Y": 0.06, "Z": 0.30,
+          "Pitch": -5, "Roll": 0, "Yaw": 0
+        }
+      }
+    },
+
+
+    "Drone2": {
+      "VehicleType": "Simpleflight",
+      "X": 30, "Y": 0, "Z": 0, 
+      "Pitch": 0, "Roll": 0, "Yaw": 0,
+      "Sensors": {
+        "Barometer": {
+          "SensorType": 1,
+          "Enabled": true
+                      },
+        "Imu": {
+           "SensorType": 2,
+           "Enabled": true
+                },
+        "Gps": {
+           "SensorType": 3,
+           "Enabled": true
+                },
+        "Magnetometer": {
+           "SensorType": 4,
+           "Enabled": true
+                        },
+        "Distance": {
+           "SensorType": 5,
+           "Enabled": true
+                    },
+        "LidarCustom": {
+          "SensorType": 6,
+          "Enabled": true,
+          "NumberOfChannels": 16,
+          "PointsPerSecond": 100000,
+          "VerticalFOVUpper": 16,
+          "VerticalFOVLower": -16,
+          "X": 0,
+          "Y": 0,
+          "Z": -1,
+          "DrawDebugPoints": false,
+          "DataFrame": "SensorLocalFrame"
+                        }
+                  },
+      "Cameras": {
+        "front_left_custom": {
+          "CaptureSettings": [
+            {
+              "PublishToRos": 1,
+              "ImageType": 0,
+              "Width": 1920,
+              "Height": 1080,
+              "FOV_Degrees": 90,
+              "DepthOfFieldFstop": 2.8,
+              "DepthOfFieldFocalDistance": 200.0, 
+              "DepthOfFieldFocalRegion": 200.0,
+              "TargetGamma": 1.5
+            },
+	    {
+	      "PublishToRos": 1,
+              "ImageType": 2,
+              "Width": 1920,
+              "Height": 1080,
+              "FOV_Degrees": 90,
+              "DepthOfFieldFstop": 2.8,
+              "DepthOfFieldFocalDistance": 200.0, 
+              "DepthOfFieldFocalRegion": 200.0,
+              "TargetGamma": 1.5
+	   }
+          ],
+          "X": 0.50, "Y": -0.06, "Z": 0.30,
+          "Pitch": -5, "Roll": 0, "Yaw": 0
+        },
+	"front_right_custom": {
+          "CaptureSettings": [
+            {
+              "PublishToRos": 1,
+              "ImageType": 0,
+              "Width": 1920,
+              "Height": 1080,
+              "FOV_Degrees": 90,
+              "DepthOfFieldFstop": 2.8,
+              "DepthOfFieldFocalDistance": 200.0, 
+              "DepthOfFieldFocalRegion": 200.0,
+              "TargetGamma": 1.5
+            },
+	    {
+	      "PublishToRos": 1,
+              "ImageType": 2,
+              "Width": 1920,
+              "Height": 1080,
+              "FOV_Degrees": 90,
+              "DepthOfFieldFstop": 2.8,
+              "DepthOfFieldFocalDistance": 200.0, 
+              "DepthOfFieldFocalRegion": 200.0,
+              "TargetGamma": 1.5
+	   }
+          ],
+          "X": 0.50, "Y": 0.06, "Z": 0.30,
+          "Pitch": -5, "Roll": 0, "Yaw": 0
+        }
+      }
+    }
+
+  },
+
+"SubWindows": [
+    {"WindowID": 0, "ImageType": 0, "CameraName": "front_center_custom", "VehicleName": "Drone2", "Visible": true},
+    {"WindowID": 1, "ImageType": 0, "CameraName": "front_center_custom",  "VehicleName": "Drone3", "Visible": true},
+    {"WindowID": 2, "ImageType": 0, "CameraName": "front_center_custom", "VehicleName": "Drone4",  "Visible": true}
+  ],
+
+"TimeOfDay": {
+    "Enabled": true,
+    "StartDateTime": "2020-10-12 12:00:00",
+    "CelestialClockSpeed": 1,
+    "StartDateTimeDst": false,
+    "UpdateIntervalSecs": 60
+  }
+}
