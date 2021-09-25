@@ -1,7 +1,7 @@
 # Lightweight Multi-Drone Detection and 3D-Localization using YOLO
 
 ---
-#Drone Detection
+# Drone Detection
 
 ## Setting up
 
@@ -26,11 +26,10 @@ make
 
 ## Running
 
-Open terminal in the root directory of the **darknet** executable and enter:
+To run prediction on an image named input.png (sourced inside the darknet root folder), open terminal in the root directory of the **darknet** executable and enter:
 ```
-./darknet detector test cfg/drone.data cfg/yolo-drone.cfg weights/yolo-drone.weights data/drone.jpg
-```
+./darknet detector test data/obj.data cfg/tiny-yolov4_drone.cfg weights/backup_yolov4-tiny/yolov4-tiny_drone_best.weights input.png```
 
 ---
 
-#Depth Estimation
+# Depth Estimation
