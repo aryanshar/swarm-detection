@@ -1,6 +1,7 @@
 # Lightweight Multi-Drone Detection and 3D-Localization using YOLO
 
 ---
+#Drone Detection
 
 ## Setting up
 
@@ -13,11 +14,13 @@ cd darknet
 make
 ```
 
-> **Note**: if you are using another variant of Darknet (e.g [AlexeyAB fork](https://github.com/AlexeyAB/darknet)), the labels are in a different format. Original Yolo uses absolute coordinates to indicate the target box in the image, whereas AlexeyAB (and others) adopts relative coordinates. Depending on your version, the appropriate labels can be found in the directory `labels` (absolute coords) or `normalized-labels` (relative). Of course, images remain the same. |
+> **Note**: The folder data/dataset contains the image files and its corresponding annotation files in the same folder only. |
 
-3. Move **drone.data**, **drone.names**, and **yolo-drone.cfg** under the **cfg** folder, create a **weights** directory and move **yolo-drone.weights** into the folder, move **drone.jpg** under the **data** folder, and move **test.txt** and **train.txt** in the root directory of your cloned darknet.
+3. Move **weights**, **data**, **scripts**, **cfg** in the root directory of your cloned darknet.
 
-4. Change lines 2 and 3 to your path in **drone.data**.
+4. Comment the corresponding cfg file you want to use, based on either test/train configuration as per mentioned in the comments of the cfg file.
+5. Change lines 2 and 3 to your path in **data/obj.data**.
+6. To do a train/test split, run the train_test_split.py in the scripts folder after changing the paths. The **train.txt** and **test.txt** files are generated inside the data folder. 
 
 ---
 
@@ -30,4 +33,4 @@ Open terminal in the root directory of the **darknet** executable and enter:
 
 ---
 
-## Updates
+#Depth Estimation
