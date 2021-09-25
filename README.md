@@ -1,4 +1,4 @@
-# Lightweight Multi-Drone Detection and 3D-Localization using YOLO
+Code for the paper titled **Lightweight Multi-Drone Detection and 3D-Localization using YOLO**
 
 ---
 # Drone Detection
