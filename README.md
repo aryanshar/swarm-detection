@@ -41,8 +41,7 @@ To run prediction on an image named input.png (sourced inside the darknet root f
 
 
 
-https://user-images.githubusercontent.com/28498326/136597015-701201a4-7659-4139-a26d-4672d7b9158b.mp4
-
+https://user-images.githubusercontent.com/28498326/136603974-a57d66f7-2b70-4975-b7c4-c6f10682add3.mov
 
 
 
