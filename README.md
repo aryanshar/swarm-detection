@@ -31,13 +31,20 @@ To run prediction on an image named input.png (sourced inside the darknet root f
 ./darknet detector test data/obj.data cfg/tiny-yolov4_drone.cfg weights/backup_yolov4-tiny/yolov4-tiny_drone_best.weights input.png
 
 ```
-
+---
 ## Results
 
 
 
 
-https://user-images.githubusercontent.com/28498326/136596589-37e567ab-b841-4079-8cb5-518c66842870.mp4
+
+
+
+
+https://user-images.githubusercontent.com/28498326/136597015-701201a4-7659-4139-a26d-4672d7b9158b.mp4
+
+
+
 
 
 ---
